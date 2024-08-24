@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.google.com/share?selection.family=Inter:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet">
+    <title>Encriptador challenge</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/imagenes/Logo.svg" alt="Logo de alura">
+    </header>
+    <main>
+        <!-- Sección 1 -->
+        <section class="seccion1">
+            <div class="contenedorCajaTexto">
+                <label for="cajaTexto" class="textoEncabezado">Ingrese el texto a encriptar o desencriptar: </label>
+                <textarea id="cajaTexto" placeholder="Ingrese el texto aquí..." class="cajaTexto"></textarea>
+            </div>
+            <div class="alerta">
+                <img src="/imagenes/alerta.svg" alt="Ícono de alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenedorBotones">
+                <button class="botonEncriptar">Encriptar</button>
+                <button class="botonDesencriptar">Desencriptar</button>
+            </div>
+            <div class="contieneEncripar">
+                <div>
+                    <img src="/imagenes/encriptar.svg" alt="Encriptar">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección 2 -->
+        <section class="seccion2">
+            <label for="cajaResultado" class="textoEncabezado2">Resultado:</label>
+            <div class="contenedorResultado">
+                <div id="cajaResultado" class="contenedorResultado2">
+                    <p class="textoResultado"></p>
+                </div>
+            </div>
+            <div class="contenedorCopiar">
+                <button class="botonCopiar">Copiar</button>
+            </div>
+            <div class="contieneMuneco">
+                <img src="/imagenes/Muñeco.svg" alt="Muñeco alura">
+            </div>
+            <div class="contenedorParrafo">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p></p>
+            </div>
+        </section>
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
+
