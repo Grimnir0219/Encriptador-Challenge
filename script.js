@@ -4,6 +4,18 @@ var desencriptarButton = document.querySelector(".botonDesencriptar");
 var muneco = document.querySelector(".contieneMuneco");
 var contenedor = document.querySelector(".contenedorParrafo");
 var resultado = document.querySelector(".textoResultado");
+var cajaTexto = document.querySelector(".cajaTexto");
+
+// Validación de carácteres en la entrada
+cajaTexto.addEventListener("input", function(event){
+    var valor = cajaTexto.value;
+    var regex = /[^a-z\s]/g;
+
+    if (regex.test(valor)){
+        cajaTexto.value = valor.replace(regex, '');
+        alert('carácter no permitido');
+    }
+});
 
 // Asigna la función procesarTexto al evento click de los botones de encriptar y desencriptar.
 encriptarButton.onclick = () => procesarTexto('encriptar');
