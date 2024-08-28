@@ -9,7 +9,7 @@ var cajaTexto = document.querySelector(".cajaTexto");
 // Validación de carácteres en la entrada
 cajaTexto.addEventListener("input", function(event){
     var valor = cajaTexto.value;
-    var regex = /[^a-z\s]/g;
+    var regex = /[^a-z\s]/g; // Busca cualquier carácter que no sea una letra minúscula (a-z) o un espacio (\s)
 
     if (regex.test(valor)){
         cajaTexto.value = valor.replace(regex, '');
